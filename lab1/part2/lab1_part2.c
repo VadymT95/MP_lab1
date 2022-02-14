@@ -231,14 +231,13 @@ if(print_iterator < storage_size) goto print_main_word;
 	if(TASK == 1)printf("%d - %d - %s;\n", general_print_count+1, main_storage[local_iterator31].word_count,  main_storage[local_iterator31].word);
 	if(main_storage[local_iterator31].word_count < 30) word_count_new++;
 	num1[local_iterator31] = main_storage[local_iterator31].word_count;
-	//local_iterator311++;
+	
 	main_storage[local_iterator31].word_count = 0;
 	general_print_count++;
 if(general_print_count < storage_size && general_print_count < storage_size) goto print_start2;
 
 	if(TASK == 2)goto dropping_words1;
 	int clear_memory2 = 0;
-
 clear22:
 	free(word_list[clear_memory2]);
 	clear_memory2++;
@@ -397,19 +396,13 @@ check_word_in_page1_1:
 	goto check_word_in_page1_1;
 	
 loop_print_2:	
-
-
 	int clear_memory = 0;
-clear1:
-
 clear2:
 	free(word_list[clear_memory]);
 	clear_memory++;
 if(clear_memory < word_count) goto clear2;
 	free(word_list);
 	free(main_storage);
-	
-
 	return 0;
 	
 }
